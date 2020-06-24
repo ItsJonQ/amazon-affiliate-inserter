@@ -23,7 +23,7 @@
 (function (window, document) {
 	window.requestAnimationFrame(() => {
 		const script = document.createElement('script');
-		script.src = '/script.js';
+		script.src = 'https://amzn-ai.vercel.app/script.js';
 		const head = document.querySelector('head');
 		head.appendChild(script);
 	});
