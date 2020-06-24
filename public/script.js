@@ -86,7 +86,7 @@
 		 */
 		if (id) {
 			url.searchParams.set('tag', id);
-			linkNode.setAttribute('href', url);
+			linkNode.setAttribute('href', url.toString());
 		}
 	}
 

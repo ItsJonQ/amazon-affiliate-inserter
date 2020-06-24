@@ -14,7 +14,9 @@ export default function Home() {
 			</Head>
 
 			<main>
-				<a href="https://www.amazon.com">Link</a>
+				<a href="https://www.amazon.ca/dp/B0791Z1G6W/ref=ods_gw_smp_tnk_jun_evg?pf_rd_r=J76S6FZHCBRJN4RA3Y42&pf_rd_p=f38edca7-866c-45e6-930a-c810ee6aaccd">
+					Link
+				</a>
 			</main>
 
 			<style jsx global>{`
