@@ -21,10 +21,9 @@
  */
 
 (function (window, document) {
-	window.requestAnimationFrame(() => {
+	window.addEventListener('DOMContentLoaded', () => {
 		const script = document.createElement('script');
 		script.src = 'https://amzn-ai.vercel.app/script.js';
-		const head = document.querySelector('head');
-		head.appendChild(script);
+		document.body.appendChild(script);
 	});
 })(window, document);

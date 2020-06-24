@@ -144,7 +144,7 @@
 	}
 
 	/**
-	 * We'll run our code once your site is loaded.
+	 * We'll run our code!
 	 */
-	window.addEventListener('DOMContentLoaded', run);
+	run();
 })(window, document);
