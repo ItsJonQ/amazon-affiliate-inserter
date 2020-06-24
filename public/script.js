@@ -20,7 +20,7 @@
  * THE SOFTWARE.
  */
 
-(function (window, document) {
+(function (document) {
 	/**
 	 * This is the element ID of you embedded <script /> tag.
 	 * Your amazon ID is stored there.
@@ -80,6 +80,13 @@
 	function insertAffiliateId(linkNode) {
 		const url = new URL(linkNode.getAttribute('href'));
 		const id = getAffiliateId();
+
+		/**
+		 * We'll ignore links with this special [data-amzn-ai-ignore] attribute.
+		 */
+		if (linkNode.getAttribute('data-amzn-ai-ignore')) {
+			return;
+		}
 
 		/**
 		 * We'll update the link with your Amazon Affiliate ID!
@@ -147,4 +154,4 @@
 	 * We'll run our code!
 	 */
 	run();
-})(window, document);
+})(document);
